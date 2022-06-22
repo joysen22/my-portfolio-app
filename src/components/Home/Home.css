@@ -1,0 +1,9 @@
+h1 {
+  text-align: center;
+}
+.home-body {
+  width: 100%;
+
+  height: 100hv;
+  background: linear-gradient(60deg, green, red, yellow);
+}
