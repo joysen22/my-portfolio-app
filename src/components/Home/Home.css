@@ -1,9 +1,124 @@
-h1 {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Charm&family=Fira+Sans+Extra+Condensed:ital@0;1&family=Monoton&family=Montserrat+Subrayada:wght@700&family=Tangerine:wght@700&display=swap");
 .home-body {
   width: 100%;
+  height: 100vh;
+  background: url("../../Image/home/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+}
+/* home-right-side css */
+.home-right-side {
+  width: 100%;
+  height: 100vh;
+}
+.img-shape {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../../Image/home/web\ shap\ smoll2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-shape .my-image {
+  /* position: absolute; */
+  width: 260px;
+  height: 360px;
+  border-radius: 60% 60% 30% 30%;
+  border: 4px solid #0feedb;
+  background-color: #efecec;
+  background-image: linear-gradient(315deg, #85d4ec 0%, #2759b8 74%);
+  z-index: 2;
+}
+.shape-image {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  z-index: 1;
+}
+/* home-left-side css style */
 
-  height: 100hv;
-  background: linear-gradient(60deg, green, red, yellow);
+.home-left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* background-color: #2759b8; */
+}
+.home-left-title {
+  width: 100%;
+}
+
+/* text-animation-body css */
+.text-animation-body {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.animetion-text {
+  z-index: 1;
+}
+/* name-title css */
+.name-title {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  font-weight: 700;
+  color: #2759b8;
+  /* font-family: "Monoton", cursive; */
+  /* font-family: "Tangerine", cursive;
+  font-family: "Tangerine", cursive; */
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+.name-title span {
+  color: #18fa6e;
+}
+.name-title-all {
+  /* font-family: "Charm", cursive; 33*/
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .img-shape .my-image {
+    width: 200px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .img-shape .my-image {
+    width: 180px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home-main {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .img-shape .shape-image {
+    /* display: none; */
+  }
+  .img-shape {
+    width: 100%;
+    height: fit-content;
+  }
+  .home-left-title {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10px;
+  }
 }

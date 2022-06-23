@@ -119,6 +119,7 @@
     background-color: #f1faee;
     padding: 10px;
     transition: all 0.9s ease-in-out;
+    z-index: 5;
   }
   .mobile-disply-none {
     display: none;
